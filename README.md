@@ -75,3 +75,64 @@ Requirement Analysis involves several crucial activities that ensure the project
 
 
 
+## Types of Requirements
+
+Requirements in software development can generally be categorized into two main types: Functional Requirements and Non-functional Requirements. Both are essential for defining a complete and successful software product.
+
+### Functional Requirements ⚙️
+
+**Definition:** Functional Requirements describe what the system should do. They specify the features and functionalities that the software must provide to its users to satisfy business needs. These are typically expressed as actions the system will perform under specific conditions.
+
+**Examples for a Booking Management System:**
+
+- **User Registration and Authentication:**  
+  The system must allow new users to create an account with a unique email and password. Registered users must be able to log in securely, and the system should authenticate their credentials.
+
+- **Search and Filter Bookings:**  
+  Users must be able to search for available bookings (e.g., rooms, appointments, vehicles) based on various criteria such as date, time, location, price range, and type of service/item.
+
+- **Book an Item/Service:**  
+  Users must be able to select an available item/service, choose desired dates/times, review booking details, and confirm their reservation.
+
+- **Manage Bookings:**  
+  Registered users must be able to view their past and upcoming bookings, modify existing bookings (e.g., change dates, cancel), and receive confirmation of changes via email.
+
+- **Admin Management of Listings:**  
+  Administrators must be able to add new items/services, update their details (e.g., availability, price, description), and remove listings from the system.
+
+- **Payment Processing:**  
+  The system must integrate with a payment gateway to securely process payments for bookings.
+
+### Non-functional Requirements 🛡️
+
+**Definition:** Non-functional Requirements describe how the system should perform. They specify the quality attributes, characteristics, and constraints of the software rather than its specific behaviors. These requirements are crucial for the user experience and overall system effectiveness.
+
+**Examples for a Booking Management System:**
+
+- **Performance:**  
+  - The system should load booking search results within 2 seconds for up to 1,000 concurrent users.  
+  - Booking confirmation emails should be sent within 30 seconds of a successful booking.
+
+- **Security:**  
+  - All sensitive user data (e.g., passwords, payment information) must be encrypted both in transit and at rest.  
+  - The system must protect against common web vulnerabilities such as SQL injection and cross-site scripting (XSS).  
+  - User authentication must include strong password policies and support multi-factor authentication (MFA).
+
+- **Scalability:**  
+  - The system should be able to support a 50% increase in daily active users and booking volume year-over-year without significant degradation in performance.  
+  - The architecture should allow for horizontal scaling of web servers and database instances.
+
+- **Usability:**  
+  - The booking interface must be intuitive, allowing a first-time user to complete a booking within 3 minutes.  
+  - Error messages must be clear, concise, and provide actionable guidance to the user.  
+  - The system must be fully responsive and accessible across various devices (desktop, tablet, mobile).
+
+- **Reliability:**  
+  - The system must achieve an uptime of 99.9% annually, excluding scheduled maintenance.  
+  - In the event of a system failure, data recovery must be possible within 1 hour with minimal data loss.
+
+- **Maintainability:**  
+  - The codebase should adhere to established coding standards and be well-documented to allow new developers to understand and modify it efficiently.  
+  - Patches and minor updates should be deployable without significant system downtime.
+
+
