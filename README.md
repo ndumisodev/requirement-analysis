@@ -53,3 +53,25 @@ Well-defined requirements act as a **blueprint** for all future stages of the SD
 > “A software project is only as strong as the requirements it is built on.”
 
 
+
+## Key Activities in Requirement Analysis
+
+Requirement Analysis involves several crucial activities that ensure the project's requirements are well understood and clearly defined:
+
+- **Requirement Gathering**  
+  Collecting raw information from stakeholders through interviews, surveys, workshops, observations, and document reviews to understand their needs and expectations.
+
+- **Requirement Elicitation**  
+  Refining and exploring the gathered information by brainstorming, focus groups, prototyping, and discussions to uncover detailed and precise requirements.
+
+- **Requirement Documentation**  
+  Recording the requirements in a clear, organized format such as Software Requirements Specifications (SRS), user stories, or use case documents to serve as a reference for all project members.
+
+- **Requirement Analysis and Modeling**  
+  Examining the documented requirements for consistency, feasibility, and completeness. Creating models like data flow diagrams, entity-relationship diagrams, or use case diagrams to visualize and validate the requirements.
+
+- **Requirement Validation**  
+  Reviewing the documented requirements with stakeholders to confirm accuracy and completeness. Defining acceptance criteria and ensuring all requirements align with project goals and stakeholder expectations.
+
+
+
