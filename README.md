@@ -157,3 +157,20 @@ The diagram below illustrates the key actors and their interactions with the boo
 ![Use Case Diagram for Booking System](./alx-booking-uc.png)
 
 
+### Actors Overview
+
+#### Primary Actors
+- **Guest**: Can register, log in, and search properties.
+- **Registered User**: Can search, book, view/cancel bookings, and (as host) list or edit properties.
+- **Admin**: Can manage users and monitor system data.
+
+#### Secondary Actors
+- **Authentication Service**: Handles login and registration validation.
+- **Database**: Persists all application data.
+- **Email Notification Service**: Sends emails for confirmations and alerts.
+- **Payment Gateway**: Processes booking payments securely.
+- **System Logger**: Tracks system activities and admin actions for auditing.
+- **Availability & Pricing Service**: Handles availability checks and dynamic pricing (if used).
+
+
+
