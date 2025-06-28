@@ -174,3 +174,63 @@ The diagram below illustrates the key actors and their interactions with the boo
 
 
 
+
+
+## ✅ Acceptance Criteria
+
+Acceptance Criteria are a set of predefined conditions that a software feature or a user story must satisfy to be considered complete and acceptable by stakeholders. They act as a crucial bridge between the development team and the business, ensuring that what is built meets the actual needs and expectations. Acceptance criteria provide a clear, unambiguous definition of "done" for any given piece of functionality.
+
+### 📌 Importance of Acceptance Criteria in Requirement Analysis
+
+- **Clarity and Shared Understanding:** Acceptance criteria translate vague requirements into concrete, verifiable statements. This eliminates ambiguity, ensuring that developers, testers, and stakeholders all have the exact same understanding of what success looks like for a particular feature.
+
+- **Basis for Testing:** They serve as the direct foundation for creating test cases. QA engineers use acceptance criteria to design tests that confirm whether the feature behaves as expected, making the testing process more efficient and thorough.
+
+- **Reduced Rework and Misunderstandings:** By clearly outlining expected outcomes, acceptance criteria help prevent costly rework caused by misinterpretations or features that don't meet stakeholder expectations. Issues are identified and resolved earlier in the development cycle.
+
+- **Facilitates Validation:** During the validation phase of requirement analysis, acceptance criteria are used to confirm that the requirements accurately reflect the user's needs and the business goals. If a feature meets its acceptance criteria, it's a strong indication that it delivers the intended value.
+
+- **Defines Scope for a Feature:** For each feature, acceptance criteria precisely define its boundaries, preventing unintended scope creep within individual functionalities. They specify what is included and, by omission, what is not.
+
+- **Empowers Development Teams:** Clear criteria provide developers with the necessary detail to build the feature correctly the first time, reducing guesswork and increasing confidence in their implementation.
+
+---
+
+### 🧪 Example: Acceptance Criteria for a Checkout Feature
+
+**Feature**: As a Registered User, I want to complete the booking checkout process so that I can confirm and pay for my selected booking.
+
+#### Scenario 1: Successful Payment and Confirmation
+- Given the user has a selected booking in their cart  
+- When the user proceeds to checkout and enters valid payment information  
+- And the payment gateway successfully processes the transaction  
+- Then the system displays a "Booking Confirmed" message  
+- And the system sends a confirmation email to the user's registered email address within 2 minutes  
+- And the booking status is updated to "Confirmed" in the user's "My Bookings" section  
+- And the availability of the booked item/service is updated in the system's inventory  
+
+#### Scenario 2: Invalid Payment Information
+- Given the user has a selected booking in their cart  
+- When the user proceeds to checkout and enters invalid payment information (e.g., incorrect card number, expired date)  
+- Then the system displays an "Invalid Payment Information" error message  
+- And the user is prompted to re-enter valid payment details  
+- And the booking status remains unchanged  
+
+#### Scenario 3: Payment Gateway Failure
+- Given the user has a selected booking in their cart  
+- When the user proceeds to checkout and valid payment information is entered  
+- And the payment gateway experiences a processing failure  
+- Then the system displays a "Payment Failed - Please try again later" error message  
+- And the user is given an option to try payment again or contact support  
+- And the booking status remains unchanged  
+
+#### Scenario 4: Redirect to Payment Gateway (if applicable)
+- Given the user clicks "Proceed to Payment" on the checkout summary page  
+- When the system initiates the payment process  
+- Then the user is securely redirected to the external payment gateway interface  
+
+---
+
+These acceptance criteria are **specific, measurable, achievable, relevant, and time-bound (SMART)**, providing clear guidelines for both development and testing.
+
+
